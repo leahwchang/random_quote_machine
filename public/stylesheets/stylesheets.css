@@ -1,0 +1,12 @@
+/* line 5, ../sass/stylesheets.scss */
+body {
+  background-color: yellow;
+}
+/* line 7, ../sass/stylesheets.scss */
+body p {
+  color: green;
+}
+/* line 10, ../sass/stylesheets.scss */
+body h1 {
+  font-style: italic;
+}

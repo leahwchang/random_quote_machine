@@ -1,0 +1,13 @@
+@import "compass";
+// @import "partials/normalize.scss";
+@import "compass/css3";
+
+body {
+  background-color: yellow;
+  p {
+    color: green;
+  }
+  h1 {
+    font-style: italic;
+  }
+}

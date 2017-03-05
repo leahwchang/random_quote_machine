@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leah's Random Quote Machine</title>
+    <link href="public/stylesheets/stylesheets.css" rel="stylesheet" type="text/css">
+    <script src="public/javascripts/jquery-3.2.0.min.js"></script>
+    <script src="public/javascripts/javascripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+    <p>hello</p>
+
+<h1>A Web Page</h1>
+<p class="message">A Paragraph</p>
+<button type="button" id="getMessage">Message</button>
+
+</div>
+
+<script>
+// check to see if it's available
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://quotes.stormconsultancy.co.uk/quotes.json", false);
+xhr.send();
+
+console.log(xhr.status);
+console.log(xhr.statusText);
+</script>
+  </body>
+</html>
