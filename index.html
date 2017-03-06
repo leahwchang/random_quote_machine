@@ -13,20 +13,10 @@
     <div class="container">
     <p>hello</p>
 
-<h1>A Web Page</h1>
-<p class="message">A Paragraph</p>
-<button type="button" id="getMessage">Message</button>
+    <h1>A Web Page</h1>
+    <p class="display">A Quote</p>
+    <button type="button" id="getQuote">get quote</button>
 
-</div>
-
-<script>
-// check to see if it's available
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://quotes.stormconsultancy.co.uk/quotes.json", false);
-xhr.send();
-
-console.log(xhr.status);
-console.log(xhr.statusText);
-</script>
+    </div>
   </body>
 </html>
