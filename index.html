@@ -1,21 +1,37 @@
 <!DOCTYPE html>
+<!-- quotes credits to http://quotes.stormconsultancy.co.uk/ -->
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leah's Random Quote Machine</title>
     <link href="public/stylesheets/stylesheets.css" rel="stylesheet" type="text/css">
-    <script src="public/javascripts/jquery-3.2.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
     <script src="public/javascripts/javascripts.js"></script>
   </head>
 
   <body>
     <div class="container">
-    <p>hello</p>
+      <h1>Coding is ..</h1>
 
-    <h1>A Web Page</h1>
-    <p class="display">A Quote</p>
-    <button type="button" id="getQuote">get quote</button>
+      <div id="quote-box">
+        <div class="display">
+          <!-- javascript rendering: class: quote, quotes[i].quote -->
+          <!-- javascript rendering: class: author, quotes[i].author -->
+        </div>
+      </div>
+
+      <div class="links">
+        <a id="getQuote">new quote</a>
+        <!-- <a id="getTweet">tweet</a> -->
+      </div>
 
     </div>
   </body>

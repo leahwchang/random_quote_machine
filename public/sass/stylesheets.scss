@@ -1,13 +1,72 @@
 @import "compass";
-// @import "partials/normalize.scss";
+@import "partials/_normalize.scss";
 @import "compass/css3";
+@import "compass/css3/flexbox";
+
+$breakpoint-xs: 414px; /* iphone 6 & iphone 6 plus */
+
+@mixin zero-margin {
+  margin: 0px 0px;
+}
+
+@mixin normal-font {
+  font-size: 1em;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 body {
-  background-color: yellow;
-  p {
-    color: green;
-  }
-  h1 {
-    font-style: italic;
+  text-align: center;
+  .container {
+    width: 70%;
+    margin: 80px auto;
+    @media (max-width: $breakpoint-xs) {
+      width: 96%;
+      margin: 30px auto;
+    }
+    h1 {
+      text-align: left;
+    }
+    #quote-box {
+      position: relative;
+      margin: 50px 0px;
+      height: 350px;
+      .display {
+        width: 80%;
+        @include zero-margin;
+        @include center;
+        .quote {
+          @include zero-margin;
+          font-size: 1.75em;
+          line-height: normal;
+          @media (max-width: $breakpoint-xs) {
+            @include normal-font;
+          }
+        }
+        .author {
+          text-align: right;
+          line-height: normal;
+          @include zero-margin;
+          @include normal-font;
+        }
+      }
+    }
+    .links {
+      text-align: right;
+      @media (max-width: $breakpoint-xs) {
+        margin-top: 30px;
+      }
+      a {
+        border: 1px solid;
+        padding: 3px;
+        margin-left: 30px;
+        @include normal-font;
+      }
+    }
   }
 }
